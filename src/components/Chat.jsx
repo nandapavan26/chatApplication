@@ -5,7 +5,7 @@ import { ChatContext } from "../context/ChatContext";
 
 
 const Chat = ()=>{
-    let { data } = useContext(ChatContext);
+    let {data,dispatch} = useContext(ChatContext);
      return(
         <div className="chat">
             <div className="chatInfo">

@@ -62,12 +62,12 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Lama Chat</span>
+        <span className="logo">Web Chat</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="display name" />
           <input required type="email" placeholder="email" />
-          <input required type="password" placeholder="password" />
+          <input required type="password" placeholder="Atleast 6 characters" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
@@ -75,7 +75,7 @@ const Register = () => {
           </label>
           <button disabled={loading}>Sign up</button>
           {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          {err && <span>Password atleast 6 characters/email is already in use</span>}
         </form>
         <p>
           You do have an account? <Link to="/register">Login</Link>
