@@ -78,7 +78,7 @@ const Register = () => {
           {err && <span>Password atleast 6 characters/email is already in use</span>}
         </form>
         <p>
-          You do have an account? <Link to="/register">Login</Link>
+          You do have an account? <Link to="/login">Login</Link>
         </p>
       </div>
     </div>
